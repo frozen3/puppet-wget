@@ -42,3 +42,5 @@ coverage/
 
 # Module-specific paths
 Puppetfile.lock
+
+Gemfile.lock

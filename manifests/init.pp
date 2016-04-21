@@ -21,5 +21,11 @@ class wget (
         package { 'ftp/wget': ensure => $version }
       }
     }
+  
+    if $::kernel == 'AIX' {
+      if ! defined(Package['wget']) {
+        package { 'wget': ensure => $version }
+      }
+    }
   }
 }
